@@ -1,45 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="shortcut icon" href="#">
         <title>edward</title>
         <link rel="stylesheet" href="./style.css" type="text/css" />
+        <script src="https://kit.fontawesome.com/4290d546a9.js" crossorigin="anonymous"></script>
     </head>
+    <style>
+        a{
+            margin: 20px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
     <body>
         <div class="container">
-                <h1 id="titlu">edward</h1>
-                <img src="https://cdn.discordapp.com/attachments/989981797918076958/1021902168548200550/a_4e6841adce6c648414f5c164b4b44d5e.gif" id="imagine">
-                <audio controls="" autoplay="">
+                <h1 id="titlu" onclick="discord()">edward</h1>
+                <img src="https://cdn.discordapp.com/attachments/1040979396795838536/1073323916958904471/44A5DB8A-26AD-4A15-A99D-406BAE796171.gif" id="imagine" onclick="discord()"> <br>
+                <span class="text" id="text">I'm a <span style="color: red">Web Developer</span>,<br><span style="color:rgb(212, 132, 11)"> Fivem Developer</span>, <span style="color: rgb(28, 116, 216);">Discord Bot</span> Developer</span><br>
+                <i class="fa-solid fa-music" onclick="MusicAlert()"></i><br>
+                <button id="music" onclick="Music()">ON</button>
+                <audio id="audio">
                     <source src="./song1.mp3" type="audio/mpeg">
-                    <source src="./song1.mp3" type="audio/ogg">
-                </audio>
+                </audio><br>
+
+                <a class="fa-brands fa-discord fa-2x" href="https://discord.gg/vlonero"></a>
         </div>
-        <!-- particles.js container -->
-        <div id="particles-js"></div>
-              
-              <!-- scripts -->
-        <script src="./particles.js"></script>
-        <script src="./app.js"></script>
-              
-              <!-- stats.js -->
-        <script src="js/lib/stats.js"></script>
-        <script>
-            var count_particles, stats, update;
-            stats = new Stats;
-            stats.setMode(0);
-            stats.domElement.style.position = 'absolute';
-            stats.domElement.style.left = '0px';
-            stats.domElement.style.top = '0px';
-            document.body.appendChild(stats.domElement);
-            count_particles = document.querySelector('.js-count-particles');
-            update = function() {
-              stats.begin();
-              stats.end();
-              if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-              }
-              requestAnimationFrame(update);
-                };
-             requestAnimationFrame(update);
-      </script>
+
     </body>
+    <script src="app.js"></script>
 </html>

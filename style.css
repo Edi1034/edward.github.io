@@ -1,5 +1,5 @@
 html, body {
-    background: rgb(59, 55, 55);
+    background: url('https://cdn.discordapp.com/attachments/989981819346780180/1064061811541946368/a_205255c1603cb16c23b797411e69141e.gif');
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -20,7 +20,6 @@ html, body {
     font-size: 46px;
     margin-bottom: 20px;
     color: white;
-    text-shadow: 1px 1px 20px white;
     font-family: 'Trebuchet MS', sans-serif;
     animation: fadeIn 2s;
 }
@@ -42,21 +41,22 @@ html, body {
 
 img{
     border-radius: 5px;
-    box-shadow: 1px 1px 20px white;
     animation: fadeIn 2s;
 }
+  .text{
+        margin: 0;
+    margin-right: -10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    animation: fadeIn 2s;
+  }
 
-audio{
-    position: fixed;
-    top: 107%;
-    left: 42%;
-}
-
-#particles-js{
-    width: 100%;
-    height: 100%;
-    background-image: url('');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+  #music{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 20px black;
+    text-shadow: 1px 1px 20px rgb(255, 255, 255);
   }
